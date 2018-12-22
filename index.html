@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Simon (FCC)</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <link href="https://fonts.googleapis.com/css?family=Paytone+One|Press+Start+2P" rel="stylesheet">
+
+<!--<audio id="audioGreen" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" autostart="false" ></audio>
+<audio id="audioRed" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" autostart="false" ></audio>
+<audio id="audioBlue" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" autostart="false" ></audio>
+<audio id="audioYellow" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" autostart="false" ></audio>
+-->
+
+<body>
+  
+<div class ="centerContent scale">
+  
+<div class="outerCircle">
+  <div class="flex-container">
+    <div id="0" class="topLeft" onclick = "userInput(0)"></div>
+    <div id="1" class="topRight" onclick = "userInput(1)"></div>
+    </div>
+  <div class="flex-container">
+    <div id="2" class="bottomLeft" onclick = "userInput(2)"></div>
+    <div id="3" class="bottomRight"  onclick = "userInput(3)"></div>
+  </div>
+  <div class="innerCircle">
+    <div class="innerContent">
+      <span class = "simon"><b> SIMON </b></span>
+     <!-- <span>®</span>-->
+     <div class="buttonsAndCounter">
+        <button id="redButt" onclick = "startFun()" class="pointerEvents roundButtons"> </button> <span class="smallText"> START/RESET</span><br>
+        <button id="strictID" onclick = "strictFun()" class="pointerEvents roundButtons yellow"> </button> <span class="smallText"> STRICT</span>
+        <div id="counter" class="downForTheCount">00 </div>
+      </div><!-- buttonsAndCounter -->
+    </div> <!-- inner content -->
+  </div><!-- inner circle -->
+</div><!-- outer content -->
+  
+  
+  
+</div><!-- center content -->
+  <div class="wrapper">
+    <div id="gameMessages" class="popUpMessage invisible"></div></div>
+  </body>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
